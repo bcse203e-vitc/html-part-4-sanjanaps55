@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Booking Form</title>
+    </head>
+    <body>
+        <h1>Travel Booking Form</h1>
+        <form action="/submit-booking" method="post">
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="contact">Contact Information:</label><br>
+            <input type="text" id="contact" name="contact" required><br>
+
+            <label for="destination">Destination:</label><br>
+            <select id="destination" name="destination" required>
+                <option value="Paris">Paris</option>
+                <option value="London">London</option>
+                <option value="New York">New York</option>
+                <option value="Tokyo">Tokyo</option>
+            </select><br>
+
+            <label for="dates">Travel Dates:</label><br>
+            <input type="date" id="dates" name="dates" required><br>
+
+            <label for="travelers">Number of Travelers:</label><br>
+            <input type="number" id="travelers" name="travelers" min="1" value="1" required><br>
+
+            <label for="class">Travel Class:</label><br>
+            <input type="radio" id="economy" name="class" value="Economy" required>
+            <label for="economy">Economy</label><br>
+
+            <input type="radio" id="business" name="class" value="Business">
+            <label for="business">Business</label><br>
+
+            <input type="radio" id="first" name="class" value="First Class">
+            <label for="first">First Class</label><br><br>
+
+            <label for="insurance">Opt for Travel Insurance:</label><br>
+            <input type="checkbox" id="insurance" name="insurance" value="Yes">
+            <label for="insurance">Yes</label><br><br>
+
+            <label for="total-cost">Total Cost:</label><br>
+            <input type="text" id="total-cost" name="total-cost" readonly><br><br>
+
+            <input type="submit" value="Submit Booking"><br>
+            <input type="reset" value="Reset"><br>
+        </form>
+    </body>
+</html>
