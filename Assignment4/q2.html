@@ -1,1 +1,31 @@
-
+@@ -0,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form.com</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="/login" method="post">
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="gender">F
+            <input type="radio" id="gender" name="gender">M
+            <input type="radio" id="gender" name="gender">others<br>
+            <label for="age" id="age">Age Group:</label>
+            <select id="age" name="age">
+                <option value="14">14 and below</option>
+                <option value="19-35">19 to 35</option>
+                <option value="36-59">36 to 59</option>
+                <option value="60">60 and above</option>
+            </select><br>
+            <label for="comments">Comments</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Register"><br>
+        </form>
+        </body>
+    </body>
+</html>
