@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customizable Form Template</title>
+    </head>
+    <body>
+        <h1>Customizable Form Template</h1>
+        <form action="/submit-form" method="post">
+            <label for="formname">Form Name:</label><br>
+            <input type="text" id="formname" name="formname" required><br>
+
+            <label for="numfields">Number of Input Fields:</label><br>
+            <input type="number" id="numfields" name="numfields" min="1" value="1" required><br>
+
+            <label for="fieldtype">Field Types:</label><br>
+            <select id="fieldtype" name="fieldtype" required>
+                <option value="Text">Text</option>
+                <option value="Email">Email</option>
+                <option value="Number">Number</option>
+                <option value="Date">Date</option>
+            </select><br>
+
+            <label for="fieldlabel">Field Labels:</label><br>
+            <input type="text" id="fieldlabel" name="fieldlabel" required><br>
+
+            <input type="submit" value="Generate Form Preview"><br>
+            <input type="reset" value="Reset"><br>
+        </form>
+
+</html>
