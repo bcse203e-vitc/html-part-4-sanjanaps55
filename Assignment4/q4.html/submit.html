@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Application Form - Page 3</title>
+    </head>
+    <body>
+        <h1>Job Application - Work Experience</h1>
+        <form action="submit.html" method="post" enctype="multipart/form-data">
+            <label for="company">Company Name:</label><br>
+            <input type="text" id="company" name="company" required><br>
+            <label for="designation">Designation:</label><br>
+            <input type="text" id="designation" name="designation" required><br>
+            <label for="duration">Duration (in years):</label><br>
+            <input type="text" id="duration" name="duration" required><br><br>
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume" required><br><br>
+            <input type="submit" value="Submit">
+            <input type="button" value="Previous" onclick="window.history.back();">
+        </form>
+    </body>
+</html>

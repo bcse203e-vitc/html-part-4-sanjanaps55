@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Information Form</title>
+    </head>
+    <body>
+        <h1>Personal Information Form</h1>
+        <form action="/submit-info" method="post">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+
+            <label for="height">Height:</label><br>
+            <input type="text" id="height" name="height" required><br>
+
+            <label for="weight">Weight:</label><br>
+            <input type="text" id="weight" name="weight" required><br>
+
+            <label for="lifestyle">Lifestyle Questions:</label><br>
+            <input type="checkbox" id="exercise" name="lifestyle" value="Exercise">
+            <label for="exercise">Do you exercise regularly?</label><br>
+
+            <input type="checkbox" id="smoke" name="lifestyle" value="Smoke">
+            <label for="smoke">Do you smoke?</label><br>
+
+            <input type="checkbox" id="alcohol" name="lifestyle" value="Alcohol">
+            <label for="alcohol">Do you drink alcohol?</label><br><br>
+
+            <label for="dietary">Dietary Preference:</label><br>
+            <select id="dietary" name="dietary" required>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Non-Vegetarian">Non-Vegetarian</option>
+            </select><br>
+
+            <label for="activity">Activity Level:</label><br>
+            <select id="activity" name="activity" required>
+                <option value="Sedentary">Sedentary</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Active">Active</option>
+            </select><br><br>
+
+            <label for="health">Health Concerns (Optional):</label><br>
+            <textarea id="health" name="health" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit"><br>
+            <input type="reset" value="Reset"><br>
+        </form>
+    </body>
+</html>
